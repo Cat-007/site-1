@@ -1,0 +1,108 @@
+body { /*тело*/
+	font-family: Arial, sans-serif; /*стиль шрифта*/
+	color: black; /*цвет*/
+	font-size: 20px; /*размер шрифта сайдбара*/
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper { /*блоки*/
+	width: 1100px; /*ширина*/
+	margin: 0 auto; /*расположение всех блоков посередине*/
+}
+
+.logo { /*логотип*/
+	width: 150px; /*ширина*/
+	height: 50px; /*высота*/
+	margin-top: 12px; /*отступ сверху*/
+	float: left; /*положение слева*/
+}
+
+nav { /*верхнее меню*/
+	float: right; /*положение справа*/
+}
+
+.top-menu { /*верхнее меню*/
+	margin-top: 10px; /*отступ сверху*/
+	font-size: 14px; /*размер шрифта*/
+	font-weight: bold; /*шрифт "жирный"*/
+}
+
+.top-menu li { /*верхнее меню*/
+	display: block; /*убираем кружки*/
+	float: left; /*положение слева*/
+	margin-left: 15px; /*отступы слева между пунктами*/
+}
+
+.top-menu li a { /*верхнее меню*/
+	text-decoration: none; /*убираем подчеркивание*/
+	color: black; /*цвет*/
+}
+
+.left-menu { /*левое меню*/
+	color: white; /*окрас кружков*/
+}
+
+.left-menu li a { /*левое меню*/
+	text-decoration: none; /*убираем подчеркивание*/
+	color: white; /*окрас текста после кружков*/
+	font-size: 14px; /*размер шрифта*/
+}
+
+.inner-left-menu li { /*левое подменю*/
+	color: black; /*окрас кружков*/
+}
+
+.inner-left-menu li a { /*левое подменю*/
+	color: black; /*окрас текста после кружков*/
+}
+
+.row:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.row { display: inline-block; }
+* html .row { height: 1%; }
+.row { display: block; }
+
+.header { /*верхний блок (логотип + верхнее меню)*/
+	background: #3d3c66; /*цвет блока*/
+	height: 75px; /*высота блока*/
+	margin-bottom: 2px; /*отступ между шапкой и блоками сайдбар + контент*/
+}
+
+.sidebar { /*сайдбар (левое меню + подменю)*/
+	background: #3d3c66; /*цвет блока*/
+	height: 1420px; /*высота*/
+	width: 295px; /*ширина*/
+	float: left; /*положение текста слева*/
+	margin-right: 2px; /*отступ справа*/
+}
+
+.ac-container {
+	
+}
+
+.content { /*контент (справа от сайдбара)*/
+	background: #3d3c66; /*цвет*/
+	height: 1420px; /*высота*/
+	width: 783px; /*ширина*/
+	float: left; /*положение слева*/
+	color: white; /*цвет шрифта*/
+	font-size: 14px; /*размер шрифта*/
+	text-align: justify; /*выравнивание текста по бокам*/
+	padding: 0px 10px 0px 10px; /*отступы текста внутри блока*/
+}
+
+.footer { /*футер (ниже блоков сайдбар + контент)*/
+	background: #3d3c66; /*цвет*/
+	height: 15px; /*высота*/
+	margin-top: 2px; /*отступ сверху между соседним блоком*/
+	font-size: 12px; /*размер шрифта внутри блока*/
+	padding: 5px 0px 0px 5px; /*отступы внутри блока*/
+	color: white; /*цвет текста внутри блока*/
+}
